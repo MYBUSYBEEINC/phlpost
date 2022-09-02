@@ -1,1 +1,78 @@
+How to download WordPress and install the software in 5 steps
+Ready to learn how to download WordPress? Let’s get going. It’s not that difficult, but you should still set aside some time.
 
+Download the WordPress .zip file.
+Create a WordPress database and user.
+Set up wp-config.php.
+Upload your WordPress files via FTP.
+Run the WordPress installer.
+Depending on your expertise, some of these steps might take longer than others. However, the first step should be a piece of cake.
+
+1. Download the WordPress .zip file
+First, you’ll need to download WordPress itself. Fortunately, this step will be easy if you’re experienced with the internet. Navigate to the Download WordPress page, and then click the blue button on the right side.
+
+Download WordPress Page at WordPress.org
+You’ll also see a Download .tar.gz link underneath, but you can safely ignore it — the .zip file is all you’ll need. Save it to your computer, and then unarchive the files before moving on.
+
+2. Create a WordPress database and user
+Next, you’ll need to decide whether to create a WordPress database and user. You might not have to do this depending on your host, so it’s worth investigating further. The answer might be in your host’s documentation, or you can ask directly.
+
+If you do need to create a database and user manually, you’ll also need to know what web hosting control panel you’re running. The likely candidates will be either Plesk or cPanel. GoDaddy web hosting packages run on the latter.
+
+GoDaddy WordPress Hosting Admin OptionsBy following a few installtion steps, you should be able to create a database and user. From there, you’ll need to modify your WordPress core files.
+
+3. Set up wp-config.php
+Next up in exploring how to download WordPress is accessing a core WordPress file — wp-config.php — to enable WordPress to connect to your database. This could be done when you run the WordPress installer later. However, if it doesn’t work you’ll have to retrace your steps, so it’s better to configure the file now.
+
+First, navigate to the WordPress files on your computer and rename the wp-config-sample.php file to wp-config.php. Open the file in your chosen text editor, and look for this line:
+
+// ** MySQL settings - You can get this info from your web host ** //.
+Underneath, you’ll see a list of settings:
+
+wp-config.phpWhile the DB_CHARSET and DB_COLLATE options should be left unchanged, you’ll need to customize the following, using the credentials created in step two:
+
+DB_NAME — The name of your database
+DB_USER — Your username
+DB_PASSWORD — Your password
+DB_HOST — Your hostname (usually localhost)
+
+Next, locate the * Authentication Unique Keys and Salts section:
+Authentication Unique Keys and Salts in WordPress
+Here, you’ll need to generate a set of secret keys and paste them in. These will help you secure and harden your WordPress installation. Once you’re done, save your changes and get ready to upload the files.
+
+4. Upload your WordPress files via FTP
+At this point, you’re ready to install it onto your server. You’ll need to access your FTP credentials, which can usually be found in your hosting panel. From here, open FileZilla, log into your server, and navigate to your root directory in the right panel. It’s usually called www or public_html.
+
+Download WordPress Directory via FTP
+Head to your computer’s WordPress folder in the left panel. Depending on whether you’re uploading it to your root directory or a subdirectory, carry out the following:
+
+Root directory — Upload the files, but not the wordpress folder, directly into the root directory.
+Subdirectory — Rename the wordpress folder something unique, and then upload the folder and its contents to your server.
+At this point, everything is done except the actual installation.
+
+5. Run the WordPress installer
+Finally, you need to run the WordPress installer. Open your favorite browser, and carry out one of the following steps based on where you installed WordPress:
+
+Root directory — Navigate to http://example.com/wp-admin/install.php.
+Subdirectory — Visit http://example.com/blogname/wp-admin/install.php, where “blogname” is your folder name from the last step.
+You should see the WordPress logo, and a screen full of settings that might vary depending on your host:
+
+WordPress Installer Settings ExampleMany of the options here can be tweaked later from your General Settings screen. However, you’ll need to jot down your username and password. Finally, click Install WordPress. Once it’s finished, you’ll be able to log into your brand-new site!
+
+How to speed up your installation time
+Of course, there’s an easier way to get WordPress up and running.
+
+Standing out among hosting providers, GoDaddy offers a number of packages for WordPress users of all stripes — without a complex installation process.
+
+Finally, you can shave 40 percent from WordPress’s installation time — learning how to use WordPress Websites takes only three minutes!
+
+In conclusion
+If you’ve never learned how to download and install WordPress — the process might seem intimidating. However, you can actually be up and running with WordPress in a little over five minutes, regardless of your technical ability. What’s more, if you choose a suitable web host, it could be even quicker!
+
+In this post, we’ve shown you how to download WordPress and install it. Let’s recap the process quickly:
+
+Download the WordPress zip file.
+Create a new database and user.
+Configure the wp-config.php file.
+Upload your WordPress files using FTP.
+Run the installer and tweak the settings.
